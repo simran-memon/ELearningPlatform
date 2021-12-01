@@ -1,0 +1,41 @@
+<html>
+  <head>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+
+    <!-- Viewport settings-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    {% if title %}
+        <title>ELearningPlatform - {{ title }}</title>
+    {% else %}
+        <title>ELearningPlatform</title>
+    {% endif %}
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-fixed-top">
+          <!-- <img src="https://s3.amazonaws.com/cdn.designcrowd.com/blog/40-Online-School-Logos-You-Can-Learn-From/elegant-company-logo-design-by-tdr500-designcrowd.png" height="8%" width="8%"/> -->
+
+          <!-- Brand and toggle get grouped for better mobile display -->
+
+          <!-- Right Justified Nav -->
+            <ul class="nav navbar-nav navbar-right">
+              {% if active %}
+              <li><a href="{% url 'logout_controller' %}">Logout</a></li>
+              {% endif %}
+            </ul>
+      </nav>
+    </header>
+    <br/><br/><br/>
+
+    <div class="col-md-10">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+  </body>
+</html>
