@@ -123,6 +123,7 @@ def callback_controller(request):
 
         print(user_type)
         print(user_type == 'Student')
+        print(user)
 
         if user_type == 'Student':
 
@@ -215,6 +216,8 @@ def userinfo_controller(request):
 
         if userInfo is not None:
             request.session['userInfo'] = json.dumps(userInfo, indent=4)
+
+        print(userInfo)
 
     return HttpResponseRedirect(reverse('home_controller'))
 

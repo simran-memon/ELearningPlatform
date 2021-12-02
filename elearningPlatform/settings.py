@@ -51,7 +51,8 @@ INSTALLED_APPS = [
     'teacher',
     'student',
     'widget_tweaks',
-    'okta_oauth2'
+    'okta_oauth2',
+    'django_extensions'
 ]
 
 MIDDLEWARE = [
