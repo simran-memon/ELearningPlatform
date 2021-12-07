@@ -10,7 +10,7 @@ Technologies used: Python, Django Rest Framework, HTML, CSS, Javascript
 
 Project Introduction:
 
-An e-learning platform that serves the needs of changing educational structure without compromising on the quality along with faster pace is possible with utilizing state-of-the-art technologies. For implementing this application, Python’s Django framework has been used and a default database of SQLite3 has been used. Frontend technologies such as HTML, CSS, JS and jQuery were used as a part of template engine support that Django provides. Signle-sign-on authentication with SSL encryption has been provided to the users for a secure usage. SSO roles have been alloted to the users: student role , tutor role and admin role for accessing respective functional data.  Jenkins integration with Github repository for automatic builds.
+An e-learning platform that serves the needs of changing educational structure without compromising on the quality along with faster pace is possible with utilizing state-of-the-art technologies. For implementing this application, Python’s Django framework has been used and a default database of SQLite3 has been used. Frontend technologies such as HTML, CSS, JS and jQuery were used as a part of template engine support that Django provides. Single-sign-on authentication with SSL encryption has been provided to the users for a secure usage. SSO roles have been alloted to the users: student role , tutor role and admin role for accessing respective functional data.  Jenkins integration with Github repository for automatic builds.
 
 Steps for executing the project:
 
