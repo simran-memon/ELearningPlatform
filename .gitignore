@@ -10,3 +10,4 @@ cert.crt
 cert.key
 cert.pem
 key.pem
+.venv

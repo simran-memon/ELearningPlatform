@@ -30,12 +30,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 # Okta Configuration
-ORG_URL = ""
+
+ORG_URL = "" 
 ISSUER = ""
-CLIENT_ID = ""
-CLIENT_SECRET = ""
-SCOPES = ""
+CLIENT_ID = "" 
+CLIENT_SECRET = "" 
+SCOPES = "" 
 REDIRECT_URI = ""
+
 
 # Application definition
 
