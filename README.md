@@ -32,6 +32,7 @@ An e-learning platform that serves the needs of changing educational structure w
 4. C:\windows\system32>mkcert -install
 
 5. For localhost: C:\Users\simra\PycharmProjects\temp\ELearningPlatform>mkcert -cert-file cert.pem -key-file key.pem localhost 127.0.0.1
+
    For AWS EC2:   C:\Users\simra\PycharmProjects\temp\ELearningPlatform>mkcert -cert-file cert.pem -key-file key.pem 35.87.10.240:8443
 
 
