@@ -21,3 +21,18 @@ Steps for executing the project:
 4. To run server on localhost:   python manage.py runserver
 5. To check for the deployed version on AWS EC2 instance, visit: https://35.87.10.240:8443/
 
+Steps for local self-signed certificate creation on localhost and AWS EC2:
+
+1. C:\windows\system32>@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+
+2. C:\windows\system32>choco -
+
+3. C:\windows\system32>choco install mkcert
+
+4. C:\windows\system32>mkcert -install
+
+5. For localhost: C:\Users\simra\PycharmProjects\temp\ELearningPlatform>mkcert -cert-file cert.pem -key-file key.pem localhost 127.0.0.1
+   For AWS EC2:   C:\Users\simra\PycharmProjects\temp\ELearningPlatform>mkcert -cert-file cert.pem -key-file key.pem 35.87.10.240:8443
+
+
+
