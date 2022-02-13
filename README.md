@@ -16,8 +16,7 @@ An e-learning platform that serves the needs of changing educational structure w
 
 1. Install Python(3.10) and Django
 2. Execute the command in terminal: python -m pip install -r requirements. txt
-3. Move to project directory and execute following commands: python manage.py makemigrations
-                                                             python manage.py migrate
+3. Move to project directory and execute following commands: python manage.py makemigrations   ,   python manage.py migrate
 4. To run server on localhost:   python manage.py runserver
 5. To check for the deployed version on AWS EC2 instance, visit: https://35.87.10.240:8443/
 
